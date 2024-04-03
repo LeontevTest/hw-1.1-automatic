@@ -1,13 +1,16 @@
 package org.example.AutomationBasics;
 
-import org.testng.annotations.Test;
 
-import static org.testng.AssertJUnit.assertEquals;
+import org.junit.Test;
+
+
+import static org.junit.Assert.*;
 
 public class CashbackHackServiceTest {
     CashbackHackService service = new CashbackHackService();
 
     @Test
+
     public void shouldReturn100() {
         int expected = 100;
         int actual = service.remain(900);
